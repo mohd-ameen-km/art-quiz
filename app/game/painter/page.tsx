@@ -21,8 +21,7 @@ export default function PainterGame() {
       setGuess("");
       
       const p = await getRandomPainting();
-      console.log("Loaded painting:", p);
-      
+
       if (!p) {
         throw new Error("No painting data received");
       }
