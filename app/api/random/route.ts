@@ -52,7 +52,7 @@ async function getAIC() {
       item.is_public_domain &&
       item.image_id &&
       item.artist_title &&
-      classes.some(c => c.includes("painting"))
+      classes.some((c: string) => c.includes("painting"))
     );
   });
 
